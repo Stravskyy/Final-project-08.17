@@ -1,0 +1,40 @@
+.menu {
+
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+  text-align: justify;
+  white-space: normal;
+
+  &:after {
+    display: inline-block;
+    width: 100%;
+    font-size: 0;
+    height: 0;
+    content: "";
+  }
+
+  &-item {
+    display: inline-block;
+    font-size: 13px;
+  }
+
+  &-link{
+    color: #444444;
+    font-family: Myriad, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover{
+      text-decoration: none;
+      color: #a3c83a;
+    }
+  }
+}
+
+

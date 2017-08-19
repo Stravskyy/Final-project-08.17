@@ -1,0 +1,43 @@
+@import "navbar/menu";
+@import "navbar/logo";
+@import "media";
+
+.header {
+  background: #ffffff;
+  font-size: 0;
+  height: 75px;
+}
+
+.container-nav {
+  padding: 0;
+  height: 100%;
+}
+
+.menu-block,
+.logo-block{
+  font-size: 0;
+  height: 100%;
+  white-space: nowrap;
+}
+
+.menu-container,
+.logo-container{
+  height: 100%;
+  white-space: nowrap;
+  font-size: 0;
+
+  &:before{
+    vertical-align: middle;
+    content: "";
+    width: 0;
+    font-size: 0;
+    height: 100%;
+    display: inline-block;
+  }
+}
+
+
+
+
+
+
