@@ -1,9 +1,13 @@
 $(document).ready(function(){
     $('.bxslider').bxSlider({
         mode: 'fade',
-        auto: true,
+        auto: false,
         pause: 6000,
         pager: false,
         adaptiveHeight: true
+
+
+
     });
 });
+

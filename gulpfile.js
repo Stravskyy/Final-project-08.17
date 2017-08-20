@@ -18,7 +18,7 @@ gulp.task("html", function () {
 });
 
 gulp.task("css:app", function () {
-    return gulp.src("src/styles/App.less")
+    return gulp.src("src/styles/app.less")
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(less())
@@ -32,7 +32,8 @@ gulp.task("css:app", function () {
 gulp.task("css:vendor", ["css:app"], function() {
     return gulp.src([
         "node_modules/bootstrap/dist/css/bootstrap.min.css",
-        "resources/jquery.bxslider/jquery.bxslider.css"
+        "resources/jquery.bxslider/jquery.bxslider.css",
+        "node_modules/font-awesome/css/font-awesome.css"
     ])
         .pipe(plumber())
         .pipe(concat("bundle.min.css"))
@@ -65,7 +66,7 @@ gulp.task("js:vendor", ["js:app"], function () {
 gulp.task("images:app", function () {
     return gulp.src([
         "src/images/**/*.*",
-        "resources/**/*.*"
+        "resources/**/images/*"
     ])
         .pipe(plumber())
         .pipe(imagemin())
@@ -82,7 +83,8 @@ gulp.task("fonts:app", function() {
 
 gulp.task("fonts:vendor", function() {
     return gulp.src([
-        "node_modules/bootstrap/dist/fonts/**/*.*"
+        "node_modules/bootstrap/dist/fonts/**/*.*",
+        "node_modules/font-awesome/fonts/*"
     ])
         .pipe(plumber())
         .pipe(gulp.dest("dist/fonts"));
