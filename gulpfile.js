@@ -36,6 +36,9 @@ gulp.task("css:vendor", ["css:app"], function() {
         "node_modules/font-awesome/css/font-awesome.css"
     ])
         .pipe(plumber())
+        .pipe(sourcemaps.init())
+        .pipe(cssnano())
+        .pipe(sourcemaps.write())
         .pipe(concat("bundle.min.css"))
         .pipe(gulp.dest("dist/css"));
 });

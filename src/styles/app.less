@@ -1,7 +1,8 @@
-@import "components/navbar";
 @import "components/fonts";
+@import "components/navbar";
 @import "components/index";
-
+@import "components/media";
+@import "components/pg-animation";
 
 * {
   box-sizing: border-box;
@@ -20,11 +21,14 @@ html, body {
   background: linear-gradient(to right, #613f84, #815ca6);
 }
 
+
+
+
 .container {
   height: inherit;
   margin: 0 auto;
-
 }
+
 
 .wrapper {
   min-height: 100%;
@@ -37,27 +41,3 @@ html, body {
   background: #31383d;
 }
 
-@media screen and (max-width: 767px) {
-  .header,
-  .menu-container,
-  .menu-block,
-  .logo-block,
-  .logo-container{
-    height: auto;
-    width: 100%;
-    margin: 0;
-  }
-
-  .menu-item,
-  .logo{
-    display: block;
-    padding: 0;
-  }
-
-  .menu-link,
-  .logo{
-    width: 100%;
-    text-align: center;
-
-  }
-}

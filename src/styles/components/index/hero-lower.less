@@ -1,0 +1,109 @@
+.hero-lower {
+  min-height: 286px;
+}
+
+.suggestion {
+  &-link {
+
+    &-world {
+
+      &:before {
+        content: "";
+        vertical-align: middle;
+        background: url("/images/index/world.png") no-repeat center;
+        width: 100%;
+        font-size: 0;
+        min-height: 65px;
+        display: inline-block;
+      }
+      &:hover:before {
+        background: url("/images/index/world_hover.png") no-repeat center;
+      }
+    }
+
+    &-cloud {
+      &:before {
+        content: "";
+        vertical-align: middle;
+        background: url("/images/index/cloud.png") no-repeat center;
+        width: 100%;
+        font-size: 0;
+        min-height: 65px;
+        display: inline-block;
+      }
+      &:hover:before {
+        background: url("/images/index/cloud_hover.png") no-repeat center bottom;
+      }
+    }
+
+    &-dev{
+      &:before {
+        content: "";
+        vertical-align: middle;
+        background: url("/images/index/app.png") no-repeat center;
+        width: 100%;
+        font-size: 0;
+        min-height: 65px;
+        display: inline-block;
+      }
+      &:hover:before {
+        background: url("/images/index/app_hover.png") no-repeat center;
+      }
+    }
+
+    &-marceting{
+      &:before {
+        content: "";
+        vertical-align: middle;
+        background: url("/images/index/mail.png") no-repeat center;
+        width: 100%;
+        font-size: 0;
+        min-height: 65px;
+        display: inline-block;
+      }
+      &:hover:before {
+        background: url("/images/index/mail_hover.png") no-repeat center;
+      }
+    }
+
+  }
+
+
+
+  &-header {
+    text-align: center;
+    text-transform: uppercase;
+    font-family:Myriad, sans-serif;
+    font-size: 18px;
+    font-weight:bold;
+
+
+  }
+  &-line {
+
+    display: block;
+    text-align: center;
+    font-size:0;
+    padding-bottom:21px;
+
+    &-item{
+      width: 20px;
+      min-height: 2px;
+      background: #c8c8c8;
+      display: inline-block;
+
+    }
+
+  }
+  &-description {
+
+    display: inline-block;
+    text-align: center;
+    font-family:Myriad, sans-serif;
+    font-size: 13px;
+    color: #969696;
+
+  }
+
+}
+
