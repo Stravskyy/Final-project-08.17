@@ -3,4 +3,58 @@
 @import "index/hero-upper";
 @import "index/hero-lower";
 @import "index/promo";
+@import "index/gallery-heading";
+@import "index/gallery";
+@import "index/gallery-hover";
 
+@media screen and (max-width: 1280px) {
+  .slider-caption {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .slider-image {
+    min-height: 0;
+  }
+
+  .slider-caption {
+    bottom: 80px;
+    &-item {
+      font-size: 40px;
+    }
+  }
+
+  .suggestion-description {
+    padding-bottom: 20px;
+  }
+
+  .promo-desc {
+    padding-right: 0;
+
+    &:before {
+      min-height: 50px;
+    }
+  }
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .slider-caption {
+    bottom: 50px;
+    &-item {
+      font-size: 35px;
+    }
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .slider-caption {
+
+    &-item {
+      font-size: 25px;
+    }
+  }
+}

@@ -33,7 +33,8 @@ gulp.task("css:vendor", ["css:app"], function() {
     return gulp.src([
         "node_modules/bootstrap/dist/css/bootstrap.min.css",
         "resources/jquery.bxslider/jquery.bxslider.css",
-        "node_modules/font-awesome/css/font-awesome.css"
+        "node_modules/font-awesome/css/font-awesome.css",
+        "resources/lightbox/lightbox.css"
     ])
         .pipe(plumber())
         .pipe(sourcemaps.init())
@@ -58,7 +59,8 @@ gulp.task("js:vendor", ["js:app"], function () {
     return gulp.src([
         "node_modules/jquery/dist/jquery.js",
         "node_modules/bootstrap/dist/js/bootstrap.js",
-        "resources/jquery.bxslider/jquery.bxslider.js"
+        "resources/jquery.bxslider/jquery.bxslider.js",
+        "resources/lightbox/lightbox.js"
     ])
         .pipe(plumber())
         .pipe(concat("bundle.min.js"))
