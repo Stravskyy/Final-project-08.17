@@ -23,13 +23,18 @@
     font-size: 14px;
   }
 
-  &-link{
+  &-link  {
     color: #444444;
     font-family: Myriad, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
+
+    &:focus{
+      text-decoration: none;
+      color: #444444;
+    }
 
     &:hover,
     &:active{

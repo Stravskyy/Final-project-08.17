@@ -1,0 +1,52 @@
+.current-page {
+  background: #a9cc48;
+  &-name,
+  &-nav{
+    display: inline-block;
+    font-family:Myriad, sans-serif;
+
+    &:before {
+      vertical-align: middle;
+      content: "";
+      width: 0;
+      font-size: 0;
+      min-height: 100px;
+      display: inline-block;
+    }
+
+  }
+  
+  &-name{
+    &-header {
+      display: inline-block;
+      margin: 0;
+      font-size:28px;
+      color: #ffffff;
+
+    }
+  }
+  
+  &-nav{
+    text-align: right;
+    width: 100%;
+    &-link{
+      display: inline-block;
+      text-decoration: none;
+      font-size: 14px;
+      color: #444444;
+      &:focus{
+        text-decoration: none;
+        color: #444444;
+      }
+      &:hover{
+        text-decoration: none;
+        color: #ffffff;
+      }
+
+      &-span{
+        color: #ffffff;
+      }
+    }
+  }
+
+}
