@@ -1,0 +1,153 @@
+
+.pricing {
+  padding-bottom: 15px;
+  &-desc{
+    display: block;
+    font-size: 0;
+
+
+    &:before {
+      vertical-align: middle;
+      content: "";
+      width: 0;
+      font-size: 0;
+      min-height: 183px;
+      display: inline-block;
+    }
+  }
+
+  &-heading {
+    width: 100%;
+    display: inline-block;
+    font-size: 30px;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Myriad,sans-serif;
+    font-weight:normal;
+    margin: 0;
+
+    &-main {
+      display: inline-block;
+      font-size: 28px;
+      text-transform: uppercase;
+      color: #444444;
+      width: 100%;
+    }
+
+    &-desc {
+      display: inline-block;
+      font-size: 14px;
+      color: #969696;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.offer{
+  background: #333333;
+  font-family: Myriad, sans-serif;
+
+  &-name{
+    display: inline-block;
+    color: #FFFFFF;
+    text-align: center;
+    width: 100%;
+    font-size: 29px;
+    text-transform: capitalize;
+    margin: 0;
+    &-active{
+
+      color: #333333;
+      background: #a9cc48;
+    }
+
+    &:before {
+      vertical-align: middle;
+      content: "";
+      width: 0;
+      font-size: 0;
+      min-height: 60px;
+      display: inline-block;
+      max-height: 73px;
+    }
+  }
+  &-value{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background: #f0f0f0;
+    font-size: 14px;
+    font-family: Myriad, sans-serif;
+
+
+
+
+    &-number{
+      font-size: 60px;
+      font-weight:bold;
+    }
+  }
+  &-type{
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #f0f0f0;
+
+    &-item{
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      padding-top: 30px;
+      font-size: 15px;
+      font-family: Myriad,sans-serif;
+      font-weight:normal;
+      &-bold{
+        font-weight:bold;
+      }
+    }
+
+  }
+  &-buy{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background: #f0f0f0;
+    padding: 20px 0 30px 0;
+  }
+}
+
+.buy {
+  background: #444444;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: capitalize;
+  padding: 10px 25px;
+  display: inline-block;
+  float: none;
+  margin: 0 auto;
+  border-radius: 5px;
+  &-active{
+    text-decoration: none;
+    color: #333333;
+    background: #a9cc48;
+
+  }
+
+  &:hover,
+  &:active{
+    text-decoration: none;
+    color: #333333;
+    background: #a9cc48;
+  }
+}
+
+.buy-active{
+  &:hover,
+  &:active{
+    text-decoration: none;
+    background: #444444;
+    color: white;
+  }
+}

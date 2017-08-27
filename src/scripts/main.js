@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('#slider1').bxSlider({
         mode: 'fade',
-        auto:false,
+        auto:true,
         pause: 6000,
         pager: false,
         adaptiveHeight: false,
@@ -14,7 +14,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('#slider2').bxSlider({
         mode: 'fade',
-        auto:false,
+        auto:true,
         pause: 6000,
         pager: false,
         adaptiveHeight: true,

@@ -6,9 +6,17 @@
 @import "index/gallery-heading";
 @import "index/gallery-hover";
 
+@media screen and (max-width: 1920px) {
+  .slider-caption {
+    bottom: 280px;
+  }
+}
+
+
 @media screen and (max-width: 1280px) {
   .slider-caption {
-    margin-right: 50px;
+
+    bottom: 170px;
   }
 }
 
@@ -48,9 +56,10 @@
 
 @media screen and (max-width: 578px) {
   .slider-caption {
-
+    bottom: 10px;
     &-item {
       font-size: 25px;
     }
   }
 }
+
