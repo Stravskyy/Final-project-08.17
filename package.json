@@ -26,6 +26,7 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "jquery": "^3.2.1",
+    "jquery-validation": "^1.17.0",
     "lightbox2": "^2.9.0",
     "slideout": "^1.0.1"
   }

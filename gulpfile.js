@@ -61,7 +61,8 @@ gulp.task("js:vendor", ["js:app"], function () {
         "node_modules/bootstrap/dist/js/bootstrap.js",
         "resources/jquery.bxslider/jquery.bxslider.js",
         "resources/lightbox/lightbox.js",
-        "node_modules/slideout/dist/slideout.js"
+        "node_modules/slideout/dist/slideout.js",
+        "node_modules/jquery-validation/dist/jquery.validate.js"
     ])
         .pipe(plumber())
         .pipe(concat("bundle.min.js"))

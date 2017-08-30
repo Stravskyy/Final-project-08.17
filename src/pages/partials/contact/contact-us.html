@@ -12,7 +12,8 @@
             </h2>
         </div>
         <div class="contact-us-info row">
-            <div class="col-xs-6 contact-us-details">
+            <div class="col-xs-12 col-md-6 contact-us-details">
+
                 <h5 class="contact-us-header">Contact details:</h5>
                 <p class="contact-us-pr">
                     <i class="fa fa-map-marker contact-us-pr-fa"></i>
@@ -41,17 +42,22 @@
                         veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
                         consequat.</p>
                 </div>
-            </div>
 
-            <div class="col-xs-6 contact-us-form">
+        </div>
 
-                <input type="text" placeholder="Name" class="contact-us-input">
-                <input type="text" placeholder="E-Mail" class="contact-us-input">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="contact-us-textarea"></textarea>
-                <button class="contact-us-send">Send</button>
+            <div class="col-xs-12 col-md-6 contact-us-form">
+                <form class="form" id="validationForm" name="validateForm">
+
+                <input type="text" placeholder="Name" name="Name"  class="contact-us-input">
+                <input type="text" placeholder="E-Mail" name="email"  class="contact-us-input">
+                <textarea name="textarea" cols="30" rows="10" placeholder="Message" class="contact-us-textarea"></textarea>
+                <button  type="submit"  class="contact-us-send">
+                    Send
+                </button>
+                </form>
             </div>
         </div>
     </div>
-    </div>
+
 
 </section>

@@ -2,3 +2,71 @@
 @import "services/offers";
 @import "services/serv-slider";
 @import "services/gallery";
+
+@media screen and (max-width: 991px ) {
+
+  #slider2-container {
+    .bx-next {
+      right: 10px;
+    }
+    .bx-prev {
+      left: 10px;
+    }
+
+
+  }
+  .hovereffect .overlay {
+    width:100%;
+
+    position:absolute;
+    overflow:hidden;
+    top:0;
+    left:0;
+    opacity:0;
+    background-color:rgba(0,0,0,0.5);
+    -webkit-transition:all .4s ease-in-out;
+    transition:all .4s ease-in-out
+  }
+
+  .hovereffect {
+    height: 170px;
+    width:100%;
+    float:left;
+    overflow:hidden;
+    position:relative;
+    text-align:center;
+    cursor:pointer;
+
+  }
+
+  .hovereffect img,
+  .hovereffect h2{
+    display:inline-block;
+    position:relative;
+   min-width: 100%;
+    min-height: 100%;
+    max-width:none;
+    max-height: none;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    -webkit-transition:all .4s linear;
+    transition:all .4s linear;
+
+  }
+  .hovereffect h2{
+    height: 40px;
+    min-height:0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 424px ) {
+.filter-button{
+  margin-bottom: 10px;
+}
+}
+
