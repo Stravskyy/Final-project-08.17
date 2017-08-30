@@ -64,7 +64,8 @@ gulp.task("js:vendor", ["js:app"], function () {
         "resources/lightbox/lightbox.js",
         "node_modules/slideout/dist/slideout.js",
         "node_modules/jquery-validation/dist/jquery.validate.js",
-        "node_modules/datatables.net/js/jquery.dataTables.js"
+        "node_modules/datatables.net/js/jquery.dataTables.js",
+        "node_modules/datatables.net-responsive/js/dataTables.responsive.js"
     ])
         .pipe(plumber())
         .pipe(concat("bundle.min.js"))
