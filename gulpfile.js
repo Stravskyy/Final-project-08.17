@@ -34,7 +34,8 @@ gulp.task("css:vendor", ["css:app"], function() {
         "node_modules/bootstrap/dist/css/bootstrap.min.css",
         "resources/jquery.bxslider/jquery.bxslider.css",
         "node_modules/font-awesome/css/font-awesome.css",
-        "resources/lightbox/lightbox.css"
+        "resources/lightbox/lightbox.css",
+        "node_modules/datatables.net-dt/css/jquery.dataTables.css"
     ])
         .pipe(plumber())
         .pipe(sourcemaps.init())
@@ -62,7 +63,8 @@ gulp.task("js:vendor", ["js:app"], function () {
         "resources/jquery.bxslider/jquery.bxslider.js",
         "resources/lightbox/lightbox.js",
         "node_modules/slideout/dist/slideout.js",
-        "node_modules/jquery-validation/dist/jquery.validate.js"
+        "node_modules/jquery-validation/dist/jquery.validate.js",
+        "node_modules/datatables.net/js/jquery.dataTables.js"
     ])
         .pipe(plumber())
         .pipe(concat("bundle.min.js"))
@@ -73,7 +75,8 @@ gulp.task("js:vendor", ["js:app"], function () {
 gulp.task("images:app", function () {
     return gulp.src([
         "src/images/**/*.*",
-        "resources/**/images/*"
+        "resources/**/images/*",
+        "node_modules/datatables.net-dt/img/*.png"
     ])
         .pipe(plumber())
         .pipe(imagemin())
@@ -88,6 +91,14 @@ gulp.task("fonts:app", function() {
         .pipe(gulp.dest("dist/fonts"));
 });
 
+gulp.task("data:app", function() {
+    return gulp.src([
+        "src/data/*.json"
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest("dist/data"));
+});
+
 gulp.task("fonts:vendor", function() {
     return gulp.src([
         "node_modules/bootstrap/dist/fonts/**/*.*",
@@ -97,7 +108,7 @@ gulp.task("fonts:vendor", function() {
         .pipe(gulp.dest("dist/fonts"));
 });
 
-gulp.task("build",["html", "css:app", "css:vendor", "js:app","js:vendor", "images:app","fonts:app", "fonts:vendor"]);
+gulp.task("build",["html", "css:app", "css:vendor", "js:app","js:vendor", "images:app","fonts:app", "fonts:vendor","data:app"]);
 
 gulp.task("watch", ["build"], function () {
     sync.init({
@@ -109,6 +120,7 @@ gulp.task("watch", ["build"], function () {
     gulp.watch("src/**/*.html", ["html"]);
     gulp.watch("src/styles/**/*.less", ["css:app"]);
     gulp.watch("src/scripts/*.js",["js:app"]);
+    gulp.watch( "src/data/*.json",["data:app"]);
 
     gulp.watch("dist/*.html").on("change", sync.reload);
     gulp.watch(("dist/js/*.js")).on("change",sync.reload);

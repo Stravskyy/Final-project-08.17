@@ -41,20 +41,17 @@ body {
   display: block;
 }
 
-.toggle-button{
+.toggle-button {
   margin-top: 5px;
   background-color: #A3C83A;
-  border: 0 none ;
+  border: 0 none;
   color: #FFFFFF;
   width: 42px;
   margin-left: 42px;
   font-size: 23px;
   height: 34px;
 
-
-
-  &:hover
- {
+  &:hover {
 
     border: 0 none;
     outline: none;
@@ -62,50 +59,102 @@ body {
   }
   &:visited,
   &:focus,
-  &:active{
+  &:active {
     border: 0 none;
     outline: none;
     text-decoration: none;
   }
 
 }
-#menu{
-  background: #31383d;
-
-.slide{
-
-  &-menu{
-    display: inline-block;
-    list-style: none;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  &-item{
-    display: inline-block;
-    width: 100%;
 
 
+@media screen and (max-width: 768px) {
+  #menu {
+    background: #ffffff;
+    font-size:0;
 
-    &:before {
-      vertical-align: middle;
-      content: "";
-      width: 0;
-      font-size: 0;
-      min-height:35px;
-      display: inline-block;
+    .slide {
+
+      &-menu {
+        display: inline-block;
+        list-style: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      &-item {
+        display: inline-block;
+        width: 100%;
+
+        &:before {
+          vertical-align: middle;
+          content: "";
+          width: 0;
+          font-size: 0;
+          min-height: 35px;
+          display: inline-block;
+        }
+      }
+      &-link {
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+        font-size: 0;
+
+      }
+    }
+    .menu-active {
+      color: #ffffff;
     }
   }
-  &-link{
-    text-decoration: none;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    color: #ffffff;
 
-  }
+
 }
-  .menu-active{
-    color: #a3c83a;
+
+
+@media screen and (max-width: 768px) {
+  #menu {
+    background: #31383d;
+    font-size: 15px;
+
+    .slide {
+
+      &-menu {
+        display: inline-block;
+        list-style: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      &-item {
+        display: inline-block;
+        width: 100%;
+
+        &:before {
+          vertical-align: middle;
+          content: "";
+          width: 0;
+          font-size: 0;
+          min-height: 35px;
+          display: inline-block;
+        }
+      }
+      &-link {
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+        font-size: 15px;
+
+      }
+    }
+    .menu-active {
+      color: #a3c83a;
+    }
   }
+
+
 }
